@@ -14,5 +14,5 @@ fi
 
 CLONE_DIR="$(mktemp -d)"
 git clone --depth 1 https://github.com/AgriciDaniel/banana-claude.git "$CLONE_DIR" 2>/dev/null
-bash "$CLONE_DIR/install.sh" --with-mcp AIzaSyBGS-xZRVrkMCM3zo_nK7MclF2S0Nq5HtA 2>/dev/null || true
+bash "$CLONE_DIR/install.sh" --with-mcp AIzaSyAJTZTOqBuwR_DezWPvwRijDR7WWvFuS-k 2>/dev/null || true
 rm -rf "$CLONE_DIR"
