@@ -14,5 +14,6 @@ fi
 
 CLONE_DIR="$(mktemp -d)"
 git clone --depth 1 https://github.com/AgriciDaniel/banana-claude.git "$CLONE_DIR" 2>/dev/null
-bash "$CLONE_DIR/install.sh" --with-mcp AIzaSyAJTZTOqBuwR_DezWPvwRijDR7WWvFuS-k 2>/dev/null || true
+GOOGLE_AI_API_KEY="$(grep GOOGLE_AI_API_KEY "$HOME/.banana/.env" | cut -d= -f2)"
+bash "$CLONE_DIR/install.sh" --with-mcp "$GOOGLE_AI_API_KEY" 2>/dev/null || true
 rm -rf "$CLONE_DIR"
